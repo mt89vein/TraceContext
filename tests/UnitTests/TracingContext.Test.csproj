@@ -17,6 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\TraceContext\TracingContext.csproj" />
+    <ProjectReference Include="..\..\src\TracingContext\TracingContext.csproj" />
   </ItemGroup>
 </Project>
