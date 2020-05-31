@@ -2,7 +2,14 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
+    <Description>TraceContext class with ability to access, maintain and pass on TraceId guid anywhere in code. Including http requests. Useful for distributed tracing with structured logging.</Description>
     <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;</TargetFrameworks>
+    <AssemblyName>TraceContext</AssemblyName>
+    <PackageId>TraceContext</PackageId>
+    <PackageTags>DistributedTracing, TraceId</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/mt89vein/TraceContext</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/mt89vein/TraceContext</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1'">
