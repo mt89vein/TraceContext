@@ -1,9 +1,9 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using TraceContext.Settings;
+using TracingContext.Settings;
 
-namespace TraceContext.Extensions
+namespace TracingContext.Extensions
 {
     /// <summary>
     /// Методы расширения для <see cref="IServiceCollection"/>.

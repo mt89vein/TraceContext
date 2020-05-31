@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
-using TraceContext.Middlewares;
+using TracingContext.Middlewares;
 
-namespace TraceContext.Extensions
+namespace TracingContext.Extensions
 {
     /// <summary>
     /// Методы расширения для <see cref="IApplicationBuilder"/>.

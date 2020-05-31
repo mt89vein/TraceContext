@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <IsPackable>false</IsPackable>
+    <RootNamespace>TracingContext.Test</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\TraceContext\TraceContext.csproj" />
+    <ProjectReference Include="..\..\src\TraceContext\TracingContext.csproj" />
   </ItemGroup>
 </Project>

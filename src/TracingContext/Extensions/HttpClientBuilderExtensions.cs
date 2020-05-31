@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
-using TraceContext.DelegatingHandlers;
+using TracingContext.DelegatingHandlers;
 
-namespace TraceContext.Extensions
+namespace TracingContext.Extensions
 {
     /// <summary>
     /// Методы расширения для <see cref="IHttpClientBuilder"/>.

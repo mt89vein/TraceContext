@@ -7,10 +7,10 @@ using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
-using TraceContext.Middlewares;
-using TraceContext.Settings;
+using TracingContext.Middlewares;
+using TracingContext.Settings;
 
-namespace TraceContext.Test
+namespace TracingContext.Test
 {
     [TestFixture]
     public class TraceIdMiddlewareTests

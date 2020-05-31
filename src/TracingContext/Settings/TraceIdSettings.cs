@@ -1,4 +1,4 @@
-namespace TraceContext.Settings
+namespace TracingContext.Settings
 {
     /// <summary>
     /// Настройки TraceId.

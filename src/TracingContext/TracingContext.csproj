@@ -10,6 +10,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/mt89vein/TraceContext</RepositoryUrl>
     <PackageProjectUrl>https://github.com/mt89vein/TraceContext</PackageProjectUrl>
+    <RootNamespace>TracingContext</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1'">

@@ -2,9 +2,9 @@ using Microsoft.Extensions.Options;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using TraceContext.Settings;
+using TracingContext.Settings;
 
-namespace TraceContext.DelegatingHandlers
+namespace TracingContext.DelegatingHandlers
 {
     /// <summary>
     /// Обработчик запроса, который прокидывает TraceId в заголовок запроса.

@@ -1,7 +1,7 @@
 using System;
 using System.Threading;
 
-namespace TraceContext
+namespace TracingContext
 {
     /// <summary>
     /// Контекст трейсинга.

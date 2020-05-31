@@ -4,10 +4,10 @@ using Microsoft.Extensions.Options;
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using TraceContext.Extensions;
-using TraceContext.Settings;
+using TracingContext.Extensions;
+using TracingContext.Settings;
 
-namespace TraceContext.Middlewares
+namespace TracingContext.Middlewares
 {
     /// <summary>
     /// Middleware, которая пытается прочитать/установить TraceId, которая может быть использована в

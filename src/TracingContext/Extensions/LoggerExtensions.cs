@@ -2,7 +2,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 
-namespace TraceContext.Extensions
+namespace TracingContext.Extensions
 {
     /// <summary>
     /// Методы расширения для <see cref="ILogger"/>.
