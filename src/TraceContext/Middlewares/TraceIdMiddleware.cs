@@ -83,9 +83,9 @@ namespace TraceContext.Middlewares
 
             if (_settings.UseLoggerScope)
             {
+                TraceContext.Create(traceId, traceIdSource);
                 using (logger.WithTraceContext())
                 {
-                    TraceContext.Create(traceId, traceIdSource);
                     await _next(context);
                 }
             }

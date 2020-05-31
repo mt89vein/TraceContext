@@ -58,6 +58,48 @@ public class MyAwesomeClass
 }
 ```
 
+Useful extension methods:
+
+### for ILogger
+```cs
+
+using (logger.WithTraceContext())
+{
+    // log messages in using will contain traceId in scopes
+}
+
+// it is shorthand for
+
+/// <summary>
+/// LoggingScope с текущим TraceId и TraceIdSource.
+/// </summary>
+/// <param name="logger">Логгер.</param>
+/// <returns>Disposable logging scope.</returns>
+public static IDisposable WithTraceContext(this ILogger logger)
+{
+    return logger.BeginScope(new Dictionary<string, object>
+    {
+        ["TraceId"] = TraceContext.Current.TraceId!,
+        ["TraceIdSource"] = TraceContext.Current.TraceIdSource!
+    });
+}
+```
+
+### for IHttpClientBuilder
+
+```cs
+
+public static IHttpClientBuilder AddHttpClient(this IServiceCollection services)
+{
+    return services
+        .AddHttpClient<IGithubClient, GitHubClient()
+        .AddTracing();
+        // this applies TraceIdDelegatingHandler to all requests,
+        // that enrich request headers with current traceId and traceId source.
+}
+
+```
+
 Possible configuration:
 
 
