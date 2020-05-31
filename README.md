@@ -5,6 +5,7 @@ TraceContext class with ability to access, maintain and pass on TraceId guid any
 Including http requests.
 Useful for distributed tracing with structured logging.
 
+[![NuGet version (TraceContext)](https://img.shields.io/nuget/v/TraceContext.svg?style=flat-square)](https://www.nuget.org/packages/TraceContext)
 ![UnitTest](https://github.com/mt89vein/TraceContext/workflows/UnitTest/badge.svg)
 
 ### Installing TraceContext
