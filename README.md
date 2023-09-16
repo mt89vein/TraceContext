@@ -1,6 +1,8 @@
 TraceContext
 =============
 
+> ⚠️ This project is a proof of concept and should not be used as a primary library for tracing (passing single Guid TraceId), consider using full-featured https://opentelemetry.io/ and it's [System.Diagnostics.Activity](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.activity?view=net-7.0) that available out of the box.
+
 TraceContext class with ability to access, maintain and pass on TraceId guid anywhere in code.
 Including http requests.
 Useful for distributed tracing with structured logging.
